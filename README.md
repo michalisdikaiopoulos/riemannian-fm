@@ -26,8 +26,11 @@ Algorithmic comparison to related Riemanninan diffusion models:
 ## Installation
 
 ```
-conda env create -f environment.yml
-pip install -e .
+uv venv --python 3.9
+source .venv/bin/activate
+uv pip install -r requirements.txt
+uv pip install torch --index-url https://download.pytorch.org/whl/cu117
+uv pip install -e .
 ```
 
 ## Data
